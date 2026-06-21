@@ -1,4 +1,4 @@
-# WeatherGuard Admin
+# Weather Alert System
 
 A minimalist, invitation-based weather alert system built with a clean, startup-ready architecture. This system allows public users to request an invite, while administrators can review requests and approve access. A background scheduler automatically simulates and dispatches weather alerts for all approved users, which are displayed in real-time on the admin dashboard.
 
@@ -17,7 +17,7 @@ The application is structured as a monorepo containing two distinct layers:
 
 ## Folder Structure
 ```
-weatherguard/
+weather-alert-system/
 ├── backend/                  # NestJS API
 │   ├── prisma/               # Schema and migrations
 │   └── src/
