@@ -1,4 +1,3 @@
-import React from 'react';
 import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
 import { api } from '../lib/api';
 import { useAuth } from '../contexts/AuthContext';
@@ -8,7 +7,7 @@ import { LogOut, Check, X, Bell } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 
 export function Dashboard() {
-  const { user, logout } = useAuth();
+  const { logout } = useAuth();
   const queryClient = useQueryClient();
   const navigate = useNavigate();
 
