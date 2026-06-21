@@ -5,6 +5,7 @@ import { Button } from '../components/ui/Button';
 import { CloudRain } from 'lucide-react';
 import { useMutation } from '@tanstack/react-query';
 import { api } from '../lib/api';
+import { Link } from 'react-router-dom';
 
 export function Invite() {
   const [email, setEmail] = useState('');
@@ -57,7 +58,7 @@ export function Invite() {
             </form>
           )}
           <div className="mt-6 text-center text-xs text-white/40">
-            <a href="/login" className="hover:text-white transition-colors">Admin Login</a>
+            <Link to="/login" className="hover:text-white transition-colors">Admin Login</Link>
           </div>
         </CardContent>
       </Card>

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '../components/ui/Card';
 import { Input } from '../components/ui/Input';
 import { Button } from '../components/ui/Button';
@@ -63,7 +63,7 @@ export function Login() {
             </Button>
           </form>
           <div className="mt-6 text-center text-xs text-white/40">
-            <a href="/" className="hover:text-white transition-colors">&larr; Back to Request Access</a>
+            <Link to="/" className="hover:text-white transition-colors">&larr; Back to Request Access</Link>
           </div>
         </CardContent>
       </Card>
